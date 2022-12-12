@@ -1,8 +1,8 @@
 import PropTypes from 'prop-types';
-import s from './ContactForm.module.css';
 import { fields } from './fields';
 import useForm from '../../services/hooks/useForm';
 import FormTextField from 'components/FormTextField/FormTextField';
+import s from './ContactForm.module.css';
 
 const initialState = {
   name: '',

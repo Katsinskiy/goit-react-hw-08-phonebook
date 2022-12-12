@@ -1,7 +1,8 @@
 import PropTypes from 'prop-types';
-import s from './Navigation.module.css';
 import { NavLink } from 'react-router-dom';
 import { links } from './links';
+import s from './Navigation.module.css';
+
 
 const getLinkClassName = props => {
   const { isActive } = props;

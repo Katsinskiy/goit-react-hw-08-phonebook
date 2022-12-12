@@ -1,9 +1,9 @@
 import PropTypes from 'prop-types';
-import s from './RegisterForm.module.css';
 import useForm from '../../services/hooks/useForm';
 import FormTextField from 'components/FormTextField/FormTextField';
 import Section from 'components/Section/Section';
 import { fields } from './fields';
+import s from './LoginForm.module.css';
 
 const initialState = {
   name: '',
@@ -11,18 +11,17 @@ const initialState = {
   password: '',
 };
 
-const RegisterForm = ({ onSubmitClick }) => {
+const LoginForm = ({ onSubmitClick }) => {
   const { state, handleChange, handleSubmit } = useForm({
     onSubmitClick,
     initialState,
   });
 
-  const { name, email, password } = state;
-  const isActive = name && email && password.length > 6;
+  const { email, password } = state;
+  const isActive = email && password;
   return (
-    <Section title="Registration form">
+    <Section title="Login form">
       <form className={s.form} onSubmit={handleSubmit}>
-        <FormTextField value={name} onChange={handleChange} {...fields.name} />
         <FormTextField
           value={email}
           onChange={handleChange}
@@ -41,7 +40,7 @@ const RegisterForm = ({ onSubmitClick }) => {
   );
 };
 
-RegisterForm.propTypes = {
+LoginForm.propTypes = {
   onSubmitClick: PropTypes.func.isRequired,
 };
-export default RegisterForm;
+export default LoginForm;

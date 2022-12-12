@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
-import s from './Auth.module.css';
 import { NavLink } from 'react-router-dom';
+import s from './Auth.module.css';
 
 const getLinkClassName = props => {
   const { isActive } = props;
