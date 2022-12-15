@@ -1,7 +1,7 @@
 import React, { lazy, Suspense } from 'react';
 import { Routes, Route } from 'react-router-dom';
-import PublicRoute from '../Routes/PublicRoute/PublicRoute';
-import PrivateRoute from '../Routes/PrivateRoute/PrivateRoute';
+import PublicRoute from '../routes/PublicRoute/PublicRoute';
+import PrivateRoute from '../routes/PrivateRoute/PrivateRoute';
 import Container from './UI/Container/Container';
 import Header from './Header/Header';
 import Spinner from './UI/Spinner/Spinner';
