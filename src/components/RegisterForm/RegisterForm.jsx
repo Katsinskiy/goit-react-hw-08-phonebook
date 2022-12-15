@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import useForm from '../../services/hooks/useForm';
 import FormTextField from 'components/FormTextField/FormTextField';
-import Section from 'components/Section/Section';
+import Section from 'components/UI/Section/Section';
 import { fields } from './fields';
 import s from './RegisterForm.module.css';
 

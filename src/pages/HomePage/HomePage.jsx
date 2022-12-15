@@ -1,5 +1,6 @@
-import s from './HomePage.module.css';
 import phonebook from '../../assets/img/phonebook.png';
+import s from './HomePage.module.css';
+
 const HomePage = () => {
   return (
     <main>

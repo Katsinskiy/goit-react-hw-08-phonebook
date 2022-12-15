@@ -1,10 +1,10 @@
 import React, { lazy, Suspense } from 'react';
 import { Routes, Route } from 'react-router-dom';
-import PublicRoute from '../components/PublicRoute/PublicRoute';
-import PrivateRoute from '../components/PrivateRoute/PrivateRoute';
-import Container from './Container/Container';
+import PublicRoute from '../Routes/PublicRoute/PublicRoute';
+import PrivateRoute from '../Routes/PrivateRoute/PrivateRoute';
+import Container from './UI/Container/Container';
 import Header from './Header/Header';
-import Spinner from './Spinner/Spinner';
+import Spinner from './UI/Spinner/Spinner';
 import { ToastContainer, Zoom } from 'react-toastify';
 import { useDispatch } from 'react-redux';
 import { useEffect } from 'react';

@@ -6,6 +6,11 @@ const getLinkClassName = props => {
   const { isActive } = props;
   return isActive ? s.activeLink : s.link;
 };
+
+getLinkClassName.propTypes = {
+  isActive: PropTypes.bool.isRequired,
+};
+
 const AuthNav = () => {
   return (
     <div>
@@ -18,8 +23,6 @@ const AuthNav = () => {
     </div>
   );
 };
-getLinkClassName.propTypes = {
-  isActive: PropTypes.bool.isRequired,
-};
+
 
 export default AuthNav;

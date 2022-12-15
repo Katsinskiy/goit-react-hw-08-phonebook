@@ -1,22 +1,19 @@
 import s from './ContactsPage.module.css';
 import { useSelector, useDispatch } from 'react-redux';
 import { useEffect } from 'react';
-import {
-  fetchContacts,
-  removeContact,
-  addContact,
-} from '../../redux/contacts/contacts-operations';
+import { fetchContacts, removeContact,addContact, }
+from '../../redux/contacts/contacts-operations';
 import { filterChange } from '../../redux/contacts/contacts-slice';
 import {
   getContacts,
   getFilterValue,
 } from '../../redux/contacts/contacts-selectors';
 
-import Section from '../../components/Section/Section';
+import Section from '../../components/UI/Section/Section';
 import ContactForm from '../../components/ContactForm/ContactForm';
 import ContactList from '../../components/ContactList/ContactList';
 import Filter from '../../components/Filter/Filter';
-import Spinner from '../../components/Spinner/Spinner';
+import Spinner from '../../components/UI/Spinner/Spinner';
 
 const ContactsPage = () => {
   const contacts = useSelector(getContacts);
